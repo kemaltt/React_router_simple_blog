@@ -1,10 +1,12 @@
 import React from "react";
-import BlogList from "../components/BlogList";
+import Hero from "../components/Hero";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <section>
-      <BlogList />
-    </section>
+    <div className="home_page">
+      <Header />
+      <Hero />
+    </div>
   );
 }
