@@ -17,7 +17,6 @@ export default function ItemDetail() {
         <p>{item[0].published_date}</p>
       </div>
       <p>{item[0].description} </p>
-
       <p> By {item[0].author}</p>
     </div>
   );
