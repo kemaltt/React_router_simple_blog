@@ -60,9 +60,9 @@ header nav h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   margin-top: 2vh;
-  padding: 2vh 5%;
+  padding: 1vh 7%;
 
 }
 
@@ -78,7 +78,7 @@ header nav h3{
 transform: scale(1.05);
 }
 .blog_card h3{
-  margin: 2vh 0;
+  margin: 1vh 0;
 }
 .blog_card img{
   width: 100%;
