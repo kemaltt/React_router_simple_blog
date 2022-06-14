@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 1vh 3%;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0px 2px 4px #116b37;
+  color: #116b37;
+}
+
+header nav ul{
+  display: flex;
+  list-style: none;
+  gap: 0 20px;
+}
+header nav h3{
+  cursor: pointer;
+}
+
+.nav_link{
+  text-decoration: none;
+  font-weight: bold;
+  color: #116b37;
+  border-bottom: #116b37 1px solid;
+}
+
+.blog_container{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
+  margin-top: 2vh;
+  padding: 2vh 5%;
+
 }
 
-.App-link {
-  color: #61dafb;
+.blog_card{
+  width: 300px;
+  box-shadow:0px 0px 11px -1px #000000 ;
+  border-radius: 10px;
+  transition: all 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blog_card:hover{
+  transition: all 0.3s;
+transform: scale(1.05);
 }
+.blog_card h3{
+  margin: 2vh 0;
+}
+.blog_card img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+.blog_card_text{
+  padding: 20px;
+  color: #116b37;
+}
+
+.read_more{
+  text-decoration: none;
+  color: green;
+  border: green solid 1px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.item_detail{
+  width: 50%;
+  margin: 2vh auto;
+  color: #116b37
+}
+.item_detail img{
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+
+}
+
+.item_headline{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 0;
+  padding: 0 4%;
+}
+.item_detail >p{
+  padding: 0 4%;
+  margin: 2vh 0;
+}
+.item_detail >p:nth-of-type(2){
+
+  font-weight: bold;
+}
+
